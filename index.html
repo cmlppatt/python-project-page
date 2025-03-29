@@ -15,7 +15,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <style>
-      * {box-sizing: border-box}
+      .nav-bar{
+        width: 100%;
+        background-color: #2c2c35;
+        box-shadow: 0px 5px #16161b;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .nav-bar ul{
+        width: 1200px;
+        text-align: center;
+        background-color: #2c2c35;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px auto;
+        overflow: hidden;
+      }
+      
+      .nav-bar li{
+        float: left;
+      }
+      
+      .nav-bar a{
+        color: #f9dc6f;
+        font-size: 16px;
+        font-family: "Poppins", serif;
+        text-decoration: none;
+        padding: 15px 50px;
+        display: block;
+        text-align: center;
+      }
+      
+      #last-item{
+        float: right;
+      }
+      
+      .nav-bar a:hover{
+        background-color: #16161b;
+      }
+      
+      .nav-bar img{
+        width: 30px;
+        margin-top: -5px;
+        margin-bottom: -10px;
+      }
 
       /* Slideshow container */
       .slideshow-container {
@@ -96,50 +140,6 @@
         font-family: "Gelasio", serif;
       }
       
-      .nav-bar{
-        width: 100%;
-        position: relative;
-        z-index: 1;
-        box-shadow: 0px 5px #16161b;
-      }
-      
-      .nav-bar ul{
-        background-color: #2c2c35;
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-        margin-top: -8px;
-        overflow: hidden;
-      }
-      
-      .nav-bar li{
-        float: left;
-      }
-      
-      .nav-bar a{
-        color: #f9dc6f;
-        font-size: 16px;
-        font-family: "Poppins", serif;
-        text-decoration: none;
-        padding: 15px 50px;
-        display: block;
-        text-align: center;
-      }
-      
-      #last-item{
-        float: right;
-      }
-      
-      .nav-bar a:hover{
-        background-color: #16161b;
-      }
-      
-      .nav-bar img{
-        width: 30px;
-        margin-top: -5px;
-        margin-bottom: -10px;
-      }
-      
       .carousel{
         width: 590px;
         float: right;
@@ -200,9 +200,12 @@
       }
       
       body{
-        margin-left: 0px;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Gelasio", serif;
+        background-color: #2C2C35;
         color: #2C2C35;
-        background-color: #2c2c35;
       }
       
       h1, h2, h3{
@@ -228,17 +231,16 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="nav-bar">
-        <ul>
-          <li><a href="">COUNTRY ROADS</a></li>
-          <li><a href="">GRAPHIC DESIGN</a></li>
-          <li><a href="">COMPUTING</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li id="last-item"><a href="mailto:cmlppatt@uwaterloo.ca"><img src="mail_icon.png" alt="Clickable mail icon"></a></li>
-        </ul>
-      </div>
-      
+    <div class="nav-bar">
+      <ul>
+        <li><a href="">COUNTRY ROADS</a></li>
+        <li><a href="">GRAPHIC DESIGN</a></li>
+        <li><a href="">COMPUTING</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li id="last-item"><a href="mailto:cmlppatt@uwaterloo.ca"><img src="mail_icon.png" alt="Clickable mail icon"></a></li>
+      </ul>
+    </div>
+     <div class="wrapper"> 
       <div class="project-wrapper">
         <div class="project-header">
           <div class="left-section">
